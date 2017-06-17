@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:padding="@dimen/small_space"
+        tools:context="com.tutorial.phant.flicks.DetailActivity">
+
+        <fragment
+            android:id="@+id/youtubeFragment"
+            android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_height">
+        </fragment>
+
+        <TextView
+            android:id="@+id/tvTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            tools:text="@string/title"/>
+
+        <TextView
+            android:id="@+id/tvReleaseDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            tools:text="@string/release_date"/>
+
+        <RatingBar
+            android:id="@+id/rbRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true" />
+
+        <TextView
+            android:id="@+id/tvOverview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            tools:text="@string/overview"/>
+
+    </LinearLayout>
+</ScrollView>
