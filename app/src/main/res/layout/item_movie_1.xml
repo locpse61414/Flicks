@@ -8,11 +8,12 @@
                 android:padding="8dp">
 
     <ImageView
-        android:scaleType="centerCrop"
         android:id="@+id/ivMovie1"
         android:layout_width="match_parent"
         android:layout_height="@dimen/image_height"
-        tools:src="@drawable/sam"/>
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/sample"/>
 
     <ImageView
         android:id="@+id/ivPlayButton"

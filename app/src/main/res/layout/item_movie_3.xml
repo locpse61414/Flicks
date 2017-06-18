@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:background="@color/colorPrimaryDark"
+              android:padding="@dimen/small_space"
+              android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/image_height2">
+        <ImageView
+            android:id="@+id/ivMovie3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/sample" />
+        <ImageView
+            android:id="@+id/ivPlayButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/circle_play_button"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/image_height2"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="@dimen/small_space">
+
+        <TextView
+            android:id="@+id/tvTitle3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/large_size"
+            android:textStyle="bold"
+            tools:text="Title" />
+
+        <TextView
+            android:id="@+id/tvOverview3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLines="14"
+            android:ellipsize="end"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/normal_size"
+            tools:text="@string/overview" />
+    </LinearLayout>
+</LinearLayout>

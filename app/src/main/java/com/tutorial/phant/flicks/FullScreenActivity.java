@@ -57,6 +57,7 @@ public class FullScreenActivity extends AppCompatActivity {
         try {
             Trailer temptTrailer = response.body().getTrailers().get(0);
         } catch (Exception e) {
+            finish();
             Toast.makeText(this, "Can't not found Trailer!!!!!!", Toast.LENGTH_LONG).show();
             return;
         }

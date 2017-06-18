@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
     SwipeRefreshLayout swipeContainer;
     @BindView(R.id.rvMovie)
     RecyclerView rvMovie;
-//    @BindView(R.id.relativeLayout)
-//    RelativeLayout relativeLayout;
+//    @BindView(R.id.relateLayout)
+//    RelativeLayout relateLayout;
 
     private MovieAdapter movieAdapter;
     private MovieApi movieApi;
@@ -102,6 +102,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<NowPlaying> call, Response<NowPlaying> response) {
                 Log.d("CoderSchool", response.toString());
+//                relateLayout.setVisibility(View.GONE);
                 listener.onResult(response.body());
             }
 
@@ -121,6 +122,5 @@ public class MainActivity extends AppCompatActivity {
                 android.R.color.holo_green_light,
                 android.R.color.holo_orange_light,
                 android.R.color.holo_red_light);
-
     }
 }
