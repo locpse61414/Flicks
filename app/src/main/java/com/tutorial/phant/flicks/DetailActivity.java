@@ -1,5 +1,8 @@
 package com.tutorial.phant.flicks;
 
+import android.graphics.Color;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.LayerDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -77,6 +80,8 @@ public class DetailActivity extends AppCompatActivity {
         rbRate.setStepSize(10.0f);
         rbRate.setNumStars(5);
         rbRate.setRating((float) (Double.parseDouble(movie.getVote_average()) / 2));
+        LayerDrawable stars = (LayerDrawable) rbRate.getProgressDrawable();
+        stars.getDrawable(2).setColorFilter(Color.YELLOW, PorterDuff.Mode.SRC_ATOP);
     }
 
     private void youtubeApi() {
